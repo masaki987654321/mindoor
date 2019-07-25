@@ -71,7 +71,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 	<link rel="stylesheet" href="./my.css">
 </head>
 <body>
-	<div id="all">
+
   <!-- セッション変数(successやerror)に値が入っている場合の処理
   ログインに成功した．または失敗した理由を表示 -->
     <!-- Success Message -->
@@ -94,21 +94,27 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <?php endif; ?>
 
   <!-- 他のページからGETでアクセスした場合は，以下のみが表示される． -->
-    <h2>ログイン</h2>
+  <div class="login">
+    <h1>ログイン</h1>
 
-        <form action="" method="post">
-            <div>
-                <label for="username-input">ユーザー名</label>
-                <input type="text" name="username" id="username-input" placeholder="">
-            </div>
-            <div>
-                <label for="password-input">パスワード</label>
-                <input type="password" name="passwd" id="password-input" placeholder="">
-            </div>
-            <input type="submit" value="ログイン">
-        </form>
+    <form action="" method="post">
+      <div class="form-item">
+        <label for="username-input">ユーザー名</label>
+        <input type="text" name="username" id="username-input" placeholder="">
+      </div>
+      <div class="form-item">
+        <label for="password-input">パスワード</label>
+        <input type="password" name="passwd" id="password-input" placeholder="">
+      </div>
+      <div class="button-panel">
+        <input type="submit" class="button" title="ログイン" value="ログイン"></input>
+      </div>
+    </form>
 
-        <p><a href="./user_register.php">新規ユーザ登録</a></p>
+    <div class="form-footer">
+      <p><a href="./user_register.php">新規ユーザ登録</a></p>
+    </div>
+  </div>
 
 </body>
 </html>
