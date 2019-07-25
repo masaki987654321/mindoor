@@ -100,11 +100,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <form action="" method="post">
       <div class="form-item">
         <label for="username-input">ユーザー名</label>
-        <input type="text" name="username" id="username-input" placeholder="">
+        <input type="text" name="username" placeholder="">
       </div>
       <div class="form-item">
         <label for="password-input">パスワード</label>
-        <input type="password" name="passwd" id="password-input" placeholder="">
+        <input type="password" name="passwd" placeholder="">
       </div>
       <div class="button-panel">
         <input type="submit" class="button" title="ログイン" value="ログイン"></input>

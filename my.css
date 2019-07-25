@@ -78,6 +78,7 @@ border-radius: 20px;
   padding-left: 50px;
 }
 
+/* login.php user_register.phpに適応 　終了コメントまで*/
 /* Fonts */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
 
@@ -167,3 +168,4 @@ form {
 .form-footer a:hover {
   border-bottom: 1px dotted #8c8c8c;
 }
+/* login.php user_register.phpに適応　終了 */

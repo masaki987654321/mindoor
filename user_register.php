@@ -78,20 +78,28 @@
               <?php $_SESSION['error'] = null; ?>
           </div>
       <?php endif; ?>
+      <div class="login">
+        <h1>新規ユーザー登録</h1>
 
-    <form action="" method="POST">
-        <p>ユーザー名
-            <input type="text" name="username">
-        </p>
-        <p>パスワード
-            <input type="password" name="passwd">
-        </p>
-        <p>パスワード再入力
-            <input type="password" name="passwd_confirmation">
-        </p>
-        <input type="submit" value="ログイン">
-    </form>
-	</div>
+        <form action="" method="post">
+          <div class="form-item">
+            <label for="username-input">ユーザー名</label>
+            <input type="text" name="username" placeholder="">
+          </div>
+          <div class="form-item">
+            <label for="password-input">パスワード</label>
+            <input type="password" name="passwd" placeholder="">
+          </div>
+          <div class="form-item">
+            <label for="password-input">パスワード再入力</label>
+            <input type="password" name="passwd_confirmation" placeholder="">
+          </div>
+          <div class="button-panel">
+            <input type="submit" class="button" title="登録" value="登録"></input>
+          </div>
+        </form>
+
+      </div>
 
 </body>
 </html>
